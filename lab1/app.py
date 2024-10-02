@@ -47,3 +47,18 @@ def wspinaczka():
     """Show history of transactions"""
     return render_template("wspinaczka.html")
 
+@app.route("/wspinaczka")
+def wspinaczka():
+    """Show history of transactions"""
+    return render_template("wspinaczka.html")
+
+@app.route("/wspinaczka")
+def wspinaczka():
+    """Show history of transactions"""
+    return render_template("wspinaczka.html")
+
+@app.route("/wspinaczka")
+def wspinaczka():
+    """Show history of transactions"""
+    return render_template("wspinaczka.html")
+
