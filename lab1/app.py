@@ -36,3 +36,14 @@ def index():
 def history():
     """Show history of transactions"""
     return render_template("history.html")
+
+@app.route("/rower")
+def rower():
+    """Show history of transactions"""
+    return render_template("rower.html")
+
+@app.route("/wspinaczka")
+def wspinaczka():
+    """Show history of transactions"""
+    return render_template("wspinaczka.html")
+
