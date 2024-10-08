@@ -28,37 +28,28 @@ def after_request(response):
 
 @app.route("/")
 def index():
-    """Show portfolio of stocks"""
-    
     return render_template("index.html")
 
 @app.route("/history")
 def history():
-    """Show history of transactions"""
     return render_template("history.html")
 
 @app.route("/rower")
 def rower():
-    """Show history of transactions"""
     return render_template("rower.html")
 
 @app.route("/wspinaczka")
 def wspinaczka():
-    """Show history of transactions"""
     return render_template("wspinaczka.html")
 
-@app.route("/wspinaczka")
-def wspinaczka():
-    """Show history of transactions"""
-    return render_template("wspinaczka.html")
+#@app.route("/wspinaczka")
+#def wspinaczka():
+#    return render_template("wspinaczka.html")
 
-@app.route("/wspinaczka")
-def wspinaczka():
-    """Show history of transactions"""
-    return render_template("wspinaczka.html")
+#@app.route("/wspinaczka")
+#def wspinaczka():
+#    return render_template("wspinaczka.html")
 
-@app.route("/wspinaczka")
-def wspinaczka():
-    """Show history of transactions"""
-    return render_template("wspinaczka.html")
-
+#@app.route("/wspinaczka")
+#def wspinaczka():
+#    return render_template("wspinaczka.html")
