@@ -26,7 +26,7 @@ def after_request(response):
 
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def index():
     return render_template("index.html")
 
