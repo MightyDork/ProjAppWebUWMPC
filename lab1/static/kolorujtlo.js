@@ -37,5 +37,9 @@ function clear (form)
 
 function changeBackground(kolor)
 {
-    document.getElementById("main").className += "bg-primary";
+    var element = document.getElementById("body");
+    if(kolor == 1)
+        {
+            element.classList.add("bg-primary");
+        }
 }

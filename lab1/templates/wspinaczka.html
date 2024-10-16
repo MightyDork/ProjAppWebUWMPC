@@ -12,5 +12,55 @@
         test
     </div>
     <button class="btn btn-primary">Zdjęcia ig</button>
-    <p><a href="mailto:ewelina.dolega.02@gmail.com.com">ewelina.dolega.02@gmail.com.com</a></p>
+    <div class="mt-5 mb-3">
+        <a href="mailto:ewelina.dolega.02@gmail.com.com">ewelina.dolega.02@gmail.com.com</a>
+    </div>
+
+    <div class="mt-5 mb-3">
+        <div class="position-relative top-0 start-50 translate-middle mt-5 mb-5 test-block " id="animacjaTestowa1">
+            kliknij a się powiększę
+        </div>
+        <script>
+            $("#animacjaTestowa1").on("click", function(){
+                $(this).animate({
+                    width: "500px",
+                    opacity: 0.4,
+                    fontSize: "2em",
+                    borderwidth: "10px"
+                }, 1500)
+            });
+        </script>
+
+        <div class="position-relative top-50 start-50 translate-middle mt-5 mb-5 test-block " id="animacjaTestowa3">
+        kliknij żeby powiększyć
+        </div>
+        <script>
+            $("#animacjaTestowa3").on("click", function(){
+                if (!$(this).is(":animated")) {
+                    $(this).animate({
+                        width: "+=" + 50,
+                        height: "+=" + 10,
+                        opacity: "-=" + 0.1,
+                        duration : 3000
+
+                    });
+                }
+            });
+        </script>
+
+        <div class="position-relative top-100 start-50 translate-middle mt-5 mb-5 test-block " id="animacjaTestowa2">
+            najedź kursorem a się powiększę
+        </div>
+        <script>
+            $("#animacjaTestowa2").on({
+                "mouseover" : function() {
+                    $(this).animate({
+                        width: 300
+                    }, 800);
+                }
+            });
+        </script>
+    </div>
+    
+    
 {% endblock %}
